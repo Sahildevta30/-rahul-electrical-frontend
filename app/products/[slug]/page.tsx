@@ -1,10 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { getProduct, createReview } from "../../lib/api";
-import { useCartStore } from "../../lib/cartStore";
-import { useAuthStore } from "../../lib/authStore";
-
+import { getProduct, createReview } from '../../../lib/api';
+import { useCartStore } from '../../../lib/cartStore';
+import { useAuthStore } from '../../../lib/authStore';
 export default function ProductDetailPage() {
   const { slug } = useParams();
   const router = useRouter();
